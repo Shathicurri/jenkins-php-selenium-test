@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 
 set -x
-docker run -d -p 80:80 --name my-apache-php-app -v C:\\Users\\shath\\Documents\\GitHub\\jenkins-php-selenium-test\\src:/var/www/html php:7.2-apache
+docker run -d -p 80:80 --name my-apache-php-app -v /home/Desktop/SIT/"Year 3 Tri 1"/3203/Practicals/jenkins-php-selenium-test/jenkins-php-selenium-test/src:/var/www/html php:7.2-apache
 sleep 1
 set +x
 
 echo 'Now...'
-echo 'Visit http://localhost:5000/ to see your PHP application in action.'
+echo 'Visit http://localhost/ to see your PHP application in action.'
 
